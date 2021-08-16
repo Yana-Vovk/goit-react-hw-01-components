@@ -1,0 +1,33 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 60px;
+}
+
+.item {
+  align-items: center;
+  justify-content: center;
+}
+
+.label,
+.percentage {
+  color: rgb(255, 255, 255);
+}

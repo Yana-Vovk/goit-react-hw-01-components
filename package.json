@@ -2,7 +2,7 @@
   "name": "goit-react-hw-01-components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yana-vovk.github.io/goit-react-hw-01-components",
+  "homepage": "https://Yana-Vovk.github.io/goit-react-hw-01-components",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -50,5 +50,18 @@
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
     "*.{js,css,md,jsx,scss}": "prettier --write"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended",
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "import-normalise"
+          ]
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,27 @@
+.status {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.statusOn {
+  composes: status;
+  background-color: rgb(250, 4, 4);
+}
+
+.statusOff {
+  composes: status;
+  background-color: rgb(21, 189, 21);
+}
+
+.name {
+  font-size: 50px;
+  margin: 0;
+}
+
+.avatar {
+  width: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
