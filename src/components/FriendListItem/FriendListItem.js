@@ -3,15 +3,11 @@ import s from './FriendListItem.module.css';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <>
-      {isOnline ? (
-        <span className={s.statusOn}></span>
-      ) : (
-        <span className={s.statusOff}></span>
-      )}
+    <li className={s.item}>
+      <span className={isOnline ? s.statusOn : s.statusOff} />
       <img className={s.avatar} src={avatar} alt="" width="48" />
       <p className={s.name}>{name}</p>
-    </>
+    </li>
   );
 }
 

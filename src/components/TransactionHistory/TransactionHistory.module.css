@@ -1,0 +1,20 @@
+.transactionHistory thead {
+  background-color: rgb(158, 184, 255);
+}
+
+.transactionHistory th {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(253, 253, 253);
+}
+
+.transactionHistory th,
+.transactionHistory td {
+  padding: 20px 90px;
+  min-width: 200px;
+}
+
+.transactionHistory {
+  margin-left: auto;
+  margin-right: auto;
+}

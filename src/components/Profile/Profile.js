@@ -1,15 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
-export default function Profile({
-  avatar,
-  name,
-  tag,
-  location,
-  followers,
-  views,
-  likes,
-}) {
+export default function Profile({ avatar, name, tag, location, stats }) {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -22,18 +14,18 @@ export default function Profile({
       <ul className={styles.stats}>
         <li>
           <span className={styles.label}>Followers</span>
-          <br></br>
-          <span className={styles.quantity}>{followers}</span>
+          <br />
+          <span className={styles.quantity}>{stats.followers}</span>
         </li>
         <li>
           <span className={styles.label}>Views</span>
-          <br></br>
-          <span className={styles.quantity}>{views}</span>
+          <br />
+          <span className={styles.quantity}>{stats.views}</span>
         </li>
         <li>
           <span className={styles.label}>Likes</span>
-          <br></br>
-          <span className={styles.quantity}>{likes}</span>
+          <br />
+          <span className={styles.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -45,9 +37,7 @@ Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
+  stats: PropTypes.object.isRequired,
 };
 
 // const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
